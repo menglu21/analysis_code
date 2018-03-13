@@ -140,11 +140,11 @@ void xx::Loop()
 		if(m_dataset=="outDEleG.root"){ scalef=1.0; run_period=6;}
 		if(m_dataset=="outDEleH.root"){ scalef=1.0; run_period=7;}
 
-		if(m_dataset=="outWA.root"){ scalef=1000.*489.0/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
+		if(m_dataset=="outWA.root"){ scalef=1000.*512.2/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
 		if(m_dataset=="outWJets.root"){ scalef=1000.*61526.7/float(npp-nmm)*fabs(theWeight)/theWeight;run_period=8; }
 		if(m_dataset=="outZJets.root"){ scalef=1000.*5765.4/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
 		if(m_dataset=="outZJets_FX.root"){ scalef=1000.*5765.4/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
-		if(m_dataset=="outZA.root"){ scalef=1000.*117.864/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
+		if(m_dataset=="outZA.root"){ scalef=1000.*47.46/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
 		if(m_dataset=="outTTA.root"){ scalef=1000.*3.697/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
 		if(m_dataset=="outTTJets.root"){ scalef=1000.*831.76/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
 		if(m_dataset=="outSTs.root"){ scalef=1000.*3.36/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}

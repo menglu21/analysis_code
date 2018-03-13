@@ -2,7 +2,7 @@
 void runxx() {
 //gROOT->LoadMacro("xx.C");
 TString dir="../Data_and_MC_step1/";
-ifstream infile("file_egamma");
+ifstream infile("file_all");
 string buffer; 
 TString infilename;
 

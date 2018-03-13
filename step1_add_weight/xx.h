@@ -83,7 +83,7 @@ public :
    Double_t        drj1l2;
    Double_t        drj2l2;
    Double_t        Mjj;
-   Double_t        deltaeta;
+   Double_t        deltaetajj;
    Double_t        zepp;
    Double_t        ptlep1;
    Double_t        etalep1;
@@ -231,7 +231,7 @@ public :
    TBranch        *b_drj1l2;   //!
    TBranch        *b_drj2l2;   //!
    TBranch        *b_Mjj;   //!
-   TBranch        *b_deltaeta;   //!
+   TBranch        *b_deltaetajj;   //!
    TBranch        *b_zepp;   //!
    TBranch        *b_ptlep1;   //!
    TBranch        *b_etalep1;   //!
@@ -465,7 +465,7 @@ void xx::Init(TTree *tree)
    ExTree->Branch("jet2e", &jet2e, "jet2e/D");
    ExTree->Branch("Mjj", &Mjj, "Mjj/D");
    ExTree->Branch("zepp", &zepp, "zepp/D");
-   ExTree->Branch("deltaeta", &deltaeta, "deltaeta/D");   
+   ExTree->Branch("deltaetajj", &deltaetajj, "deltaetajj/D");   
    ExTree->Branch("photon_pt", &photon_pt, "photon_pt[6]/D");
    ExTree->Branch("photon_eta", &photon_eta, "photon_eta[6]/D");
    ExTree->Branch("photon_phi", &photon_phi, "photon_phi[6]/D");
@@ -555,7 +555,7 @@ void xx::Init(TTree *tree)
    fChain->SetBranchAddress("drj1l2", &drj1l2, &b_drj1l2);
    fChain->SetBranchAddress("drj2l2", &drj2l2, &b_drj2l2);
    fChain->SetBranchAddress("Mjj", &Mjj, &b_Mjj);
-   fChain->SetBranchAddress("deltaeta", &deltaeta, &b_deltaeta);
+   fChain->SetBranchAddress("deltaetajj", &deltaetajj, &b_deltaetajj);
    fChain->SetBranchAddress("zepp", &zepp, &b_zepp);
    fChain->SetBranchAddress("ptlep1", &ptlep1, &b_ptlep1);
    fChain->SetBranchAddress("etalep1", &etalep1, &b_etalep1);
